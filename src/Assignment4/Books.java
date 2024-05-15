@@ -44,7 +44,6 @@ public class Books {
 		c.display();
 		d.display();
 		
-		
 	}
 
 }
