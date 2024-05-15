@@ -11,13 +11,13 @@ public class SimpleInterest {
 		 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("enter a principal:");
+		System.out.println("Enter a principal:");
 		p = sc.nextInt();
 		
-		System.out.println("enter a time:");
+		System.out.println("Enter a time:");
 		t = sc.nextInt();
 		
-		System.out.println("enter a Rate:");
+		System.out.println("Enter a Rate:");
 		r= sc.nextInt();
 		processing(p,t,r);
 		sc.close();
@@ -39,8 +39,8 @@ public class SimpleInterest {
 	 
 	 // method to display the results
 	 static void output(int si, int a) {
-		 System.out.println("the value of simple interest:"+si);
-		 System.out.println("the value of amount is:"+a);
+		 System.out.println("The value of simple interest:"+si);
+		 System.out.println("The value of amount is:"+a);
 	 }
 	 public static void main (String[] args) {
 		 // call input method to 

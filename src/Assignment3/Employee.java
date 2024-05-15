@@ -1,42 +1,39 @@
 package Assignment3;
 import java.util.Scanner;
 public class Employee {
-	String name[]= new String[3];
-	int year_of_joining[]=new int[3];
-	String address[]=new String[3];
-	
+	// properties
+	String name;
+	int year_of_joining;
+	int salary;
+	String address;
 	// methods
-	 void display() {
-		 Scanner sc = new Scanner(System.in);
-		 for(int i=0;i<3;i++) {
-			 System.out.println("Enter your name:");
-			 name[i]=sc.next();
-			 
-			 System.out.println("joining_date:");
-			 year_of_joining[i]=sc.nextInt();
-			 
-			 System.out.println("address:");
-			 address[i]=sc.next();
-			 
-		 }
-		 sc.close();
+	 void display(String n, int d, int s,String a) {
 		 
-			}
-	 public void DisplayTable() {
-		 System.out.println("name            year_of_joining             address");
-		 for(int i=0;i<3;i++) {
-			 System.out.println(name[i]+ "        " +year_of_joining[i]+"        "+address[i]+"        ");
+		 for(int i=0;i<5;i++) {
+		
 		 }
-	 }
-	
+		 System.out.println(n+"\t"+d+"\t\t"+s+"\t"+a);
+			
+		 }
 	
 	
 public static void main(String[] args) {
 	
-	Employee e = new Employee();
-	e.display();
-	e.DisplayTable();
+	Scanner sc = new Scanner(System.in);
 	
+	System.out.println("Enter a name:");
+	String n = sc.next();
+	System.out.println("Enter year_of_join:");
+	int d = sc.nextInt();
+	System.out.println("Enter a salary:");
+	int s = sc.nextInt();
+	System.out.println("Enter a address:");
+	String a = sc.next();
+	
+	Employee e = new Employee();
+	System.out.println("Name\tYear_of_join\tSalary\tAddress");
+	e.display(n,d,s,a);
+	sc.close();
 	
 	}
 }

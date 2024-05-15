@@ -2,33 +2,31 @@ package Assignment3;
 import java.util.Scanner;
 public class Area {
 	// properties
-	static int length;
-	static int breadth;
-	static int Area;
+	int l;
+	int b;
   void setDim(int length, int breadth) {
-	     Area = length*breadth;
-	  
+	  l=length;
+	  b=breadth;
 	}
 	
-	static int  getArea(int a) {
-		return a;
+  int getArea() {
+		int area = l*b;
+		return area;
 		
 	}
 	
 	public static void main(String[] args) {
-		
+		Area a = new Area();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the length of rectangle:");
-		int length = sc.nextInt();
+		int l = sc.nextInt();
+		
 		System.out.println("Enter the breadth of rectangle:");
-		int breadth = sc.nextInt();
+		int b = sc.nextInt();
 		
-		
-		
-		Area a = new Area();
-		a.setDim(length, breadth);
+		a.setDim(l, b);
 
-		int areaofrectangle=getArea(Area);
+		int areaofrectangle=a.getArea();
 		
 		System.out.println("The area of rectangle is:"+areaofrectangle);
 		sc.close();

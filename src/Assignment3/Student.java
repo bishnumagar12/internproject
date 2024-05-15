@@ -1,24 +1,33 @@
 package Assignment3;
 
+import java.util.Scanner;
 public class Student {
 	
 	// properties
-		static String name;
-		static int roll_no;
+	String name;
+	int roll_no;
 	
-	// constructor
-		public  Student(String name, int roll_no) {
-			this.name=name;
-			this.roll_no=roll_no;
-
+	// method
+		void display(String n,int r) {
+	
+			System.out.println(n+"\t\t"+r);
 		}
 	
 	public static void main(String[] args) {
-		
-		System.out.println("name is:"+name+"\nroll number is:"+roll_no);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a name:");
+		String n = sc.next();
+		System.out.println("Enter your rollno:");
+		int r = sc.nextInt();
 		
 		// create object
-		Student s = new Student("jhon", 6);
+		Student s = new Student();
+		
+		System.out.println("Name\t\tRollno");
+		s.display(n,r);
+		sc.close();
+		
+		
 		
 	}
 
