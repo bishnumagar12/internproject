@@ -1,13 +1,14 @@
 package Assignment7;
 
 public class Employees {
-	int id;
-	String name;
-	String company;
-	double salary;
-	String department;
-	String post;
-	String city;
+	private int id;
+	private String name;
+	private String company;
+	private double salary;
+	private String department;
+	private String post;
+	private String city;
+
 	public int getId() {
 		return id;
 	}
